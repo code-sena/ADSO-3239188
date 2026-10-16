@@ -1,0 +1,181 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="MER_MASCOTAS_VET" name="Caso_Control_Mascotas">
+    <mxGraphModel dx="1373" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ent_propietario" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Propietario" vertex="1">
+          <mxGeometry height="50" width="130" x="80" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_mascota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Mascota" vertex="1">
+          <mxGeometry height="50" width="130" x="280" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_cita" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Cita" vertex="1">
+          <mxGeometry height="50" width="130" x="480" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_veterinario" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Veterinario" vertex="1">
+          <mxGeometry height="50" width="130" x="480" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_consulta" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Consulta" vertex="1">
+          <mxGeometry height="50" width="130" x="680" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_diagnostico" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Diagnostico" vertex="1">
+          <mxGeometry height="50" width="130" x="680" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_tratamiento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Tratamiento" vertex="1">
+          <mxGeometry height="50" width="130" x="880" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_prescripcion" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Prescripcion" vertex="1">
+          <mxGeometry height="50" width="130" x="1080" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_medicamento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Medicamento" vertex="1">
+          <mxGeometry height="50" width="130" x="1080" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_lote" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Lote" vertex="1">
+          <mxGeometry height="50" width="130" x="1280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_posee" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Posee" vertex="1">
+          <mxGeometry height="40" width="60" x="215" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_organiza" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Solicita" vertex="1">
+          <mxGeometry height="40" width="60" x="415" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_asigna" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Asignada" vertex="1">
+          <mxGeometry height="40" width="60" x="515" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_realiza" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Genera" vertex="1">
+          <mxGeometry height="40" width="60" x="615" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_detecta" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Presenta" vertex="1">
+          <mxGeometry height="40" width="60" x="715" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_establece" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Establece" vertex="1">
+          <mxGeometry height="40" width="60" x="815" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_requiere" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Requiere" vertex="1">
+          <mxGeometry height="40" width="60" x="1015" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_usa" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Contiene" vertex="1">
+          <mxGeometry height="40" width="60" x="1115" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_controla" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Controla" vertex="1">
+          <mxGeometry height="40" width="60" x="1215" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_propietario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;documento&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="95" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_mascota" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;codigo_clinico&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="295" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_cita" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;codigo_cita&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="495" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_veterinario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;tarjeta_profesional&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="475" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_consulta" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;consecutivo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="695" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_diagnostico" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;codigo_diagnostico&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="685" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_tratamiento" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;id_tratamiento&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="895" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_prescripcion" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;id_prescripcion&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="1095" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_medicamento" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;codigo_medicamento&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="1070" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pk_lote" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;u&gt;numero_lote&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="1295" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="ent_propietario" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_posee">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="rel_posee" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_mascota">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="ent_mascota" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_organiza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="rel_organiza" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="ent_veterinario" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_asigna">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="rel_asigna" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="ent_cita" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_realiza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="rel_realiza" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" source="ent_consulta" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_detecta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" edge="1" parent="1" source="rel_detecta" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_diagnostico">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" edge="1" parent="1" source="ent_consulta" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_establece">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" edge="1" parent="1" source="rel_establece" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_tratamiento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" source="ent_tratamiento" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_requiere">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" source="rel_requiere" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_prescripcion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="1" source="ent_medicamento" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" source="rel_usa" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_prescripcion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="ent_medicamento" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="rel_controla">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" source="rel_controla" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;" target="ent_lote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac1" edge="1" parent="1" source="pk_propietario" target="ent_propietario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac2" edge="1" parent="1" source="pk_mascota" target="ent_mascota">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac3" edge="1" parent="1" source="pk_cita" target="ent_cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac4" edge="1" parent="1" source="pk_veterinario" target="ent_veterinario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5" edge="1" parent="1" source="pk_consulta" target="ent_consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac6" edge="1" parent="1" source="pk_diagnostico" target="ent_diagnostico">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac7" edge="1" parent="1" source="pk_prescripcion" target="ent_prescripcion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac8" edge="1" parent="1" source="pk_tratamiento" target="ent_tratamiento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac9" edge="1" parent="1" source="pk_medicamento" target="ent_medicamento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac10" edge="1" parent="1" source="pk_lote" target="ent_lote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
