@@ -1,10 +1,13 @@
 import { Client } from './model/Client.js';
 import { Reservation } from './model/Reservation.js';
+import { ClientController } from './controller/ClientController.js';
 import { ReservationController } from './controller/ReservationController.js';
 
-const controlador = new ReservationController();
 const formulario = document.getElementById('formCita');
 const textoRespuesta = document.getElementById('respuesta');
+
+const clientController = new ClientController();
+const reservationController = new ReservationController();
 
 formulario.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -26,12 +29,25 @@ formulario.addEventListener('submit', (e) => {
     cliente.id
   );
 
-  const resultado = controlador.registrar(cliente, reserva);
-
-  textoRespuesta.innerText = resultado.mensaje;
-  textoRespuesta.style.color = resultado.exito ? "green" : "red";
-
-  if (resultado.exito) {
-    formulario.reset();
+  
+  const validacionCliente = clientController.validate(cliente);
+  if (!validacionCliente.valid) {
+    textoRespuesta.innerText = validacionCliente.message;
+    textoRespuesta.style.color = 'red';
+    return;
   }
+
+  
+  const validacionReserva = reservationController.validate(reserva);
+  if (!validacionReserva.valid) {
+    textoRespuesta.innerText = validacionReserva.message;
+    textoRespuesta.style.color = 'red';
+    return;
+  }
+
+  
+  const resultado = reservationController.save(cliente, reserva);
+  textoRespuesta.innerText = resultado.message;
+  textoRespuesta.style.color = 'green';
+  formulario.reset();
 });
